@@ -124,3 +124,6 @@ done
 
 # Try to keep environment pollution down, EPA loves us.
 unset use_color sh
+
+# Try to enable the auto-completion (type: "pacman -S bash-completion" to install it).
+[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
