@@ -131,3 +131,12 @@ unset use_color sh
 # Try to enable the "Command not found" hook ("pacman -S pkgfile" to install it).
 # See also: https://wiki.archlinux.org/index.php/Bash#The_.22command_not_found.22_hook
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
+
+# replace vi with vim
+alias vi='vim'
+
+# alias sudo so that sudo sees aliases
+alias sudo='sudo '
+
+# use less instead of more
+alias more='less'
