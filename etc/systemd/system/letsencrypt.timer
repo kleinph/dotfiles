@@ -1,0 +1,9 @@
+[Unit]
+Description=Monthly letsencrypt certificate renewal
+
+[Timer]
+OnUnitActiveSec=30d
+AccuracySec=1d
+
+[Install]
+WantedBy=multi-user.target

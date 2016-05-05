@@ -1,0 +1,8 @@
+[Unit]
+Description=Renew letsencrypt certificates
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mkdir -p /tmp/letsencrypt
+ExecStart=/usr/bin/letsencrypt renew
+ExecStart=/usr/bin/rmdir /tmp/letsencrypt
